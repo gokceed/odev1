@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<style>
+p{
+border: solid black;
+margin: 15px;
+padding-left: 5px;/*tam sol koseden başlamaması için kullandım*/
+text-align: left;
+
+}
+#p1{
+background-color:#A52A2A;/*backgrond renklerini seçtim*/
+
+}
+#p2{
+background-color:#A52A2A;
+	
+}
+#p3{
+background-color:#A52A2A;
+
+}
+#p4{
+	background-color: #5F9EA0;
+}
+#p5{
+	background-color: #5F9EA0;
+}
+
+/*************LARGE DEVİCES ONLY****************/
+@media (min-width: 992px)
+{
+#p1{
+width: 27%;
+height: 200px;	
+float: left;
+}
+#p2{
+width: 27%;
+height: 200px;	
+float: left;
+}
+#p3{
+width: 27%;
+height: 200px;
+float: left;	
+}
+#p4{
+	width: 25%;
+	height: 10%;
+	float: right;
+	text-align: center;
+	position: relative;
+	margin-left: 74%;/*yazıların menü başlıgının altında başlatmak için*/
+}
+#p5{
+	width: 25%;
+	height: 10%;
+	float: right;
+	text-align: center;/*yazıyı ortalamak için kullandım*/
+	position: relative;
+	margin-left: 74%;
+	
+}
+
+}
+/****************MEDİUM DEVİCES ONLY**********************/
+@media  (min-width:768px) and (max-width: 991px)
+{
+#p1{
+width: 40%;
+height: 100px;	
+float: left;
+}
+#p2{
+width: 40%;
+height: 100px;	
+float: left;
+}
+#p3{
+width: 85%;
+height: 100px;
+position: relative;
+top : 10px;
+float: left;
+padding-top: 26px;	
+}
+#p4{
+	width: 20%;
+	height: 20%;
+	float: right;
+	text-align: center;
+	margin-left: 79%;
+}
+#p5{
+	width: 15%;
+	height: 15%;
+	position: absolute;
+	top: 0px;
+	right: 0px;/*tam köşelere denk gelmesini sağladım*/
+	
+	text-align: center;	
+	
+   
+}
+}
+
+/********************SMALL DEVİCES ONLY********************/
+@media(max-width: 767px)
+{
+#p1{ /*large ve medium değerlerle aynı yapıdadır fakat sayfaya düzgün sığması için oranlar ve dizilişler değişmiştir.*/
+width: 75%;
+height: 100px;	
+}
+#p2{
+width: 75%;
+height: 100px;	
+}
+#p3{
+width: 75%;
+height: 100px;	
+}
+#p4{
+	width: 20%;
+	height: 20%;
+	float: right;
+	text-align: center;
+	margin-left: 79%;
+}
+#p5{
+	width: 20%;
+	height: 20%;
+	float: right;
+	text-align: center;
+	margin-left: 79%;
+	
+}
+
+}
+</style>
+<body>
+<h1><center>MENÜ</center></h1>
+<p id="p1"><span id="p4"><b>Yiyecek</b></span>ET-BALIK-TAVUK-MAKARNA-PİZZA-KUMPİR ve ÇORBA çeşitlerimiz bulunur.Günlük çeşitler için görevlimize başvurun! </p>
+<p id="p2"><span id="p4"><b>İçecek</b></span>KOLA-GAZOZ-MADENSUYU-SU-LİMONATA-TAZE PORTAKAL SUYU-KAHVE -ÇAY çeşitlerimiz bulunur.</p>
+<p id="p3"><span id="p5"><b>Tatlı</b></span>TİRAMİSU-CHEESECAKE-KEŞKÜL-PROFİTEROL-TRİLEÇE-BAKLAVA çeşitlerimiz bulunur.</p>
+
+</body>
+</head>
+</html>
